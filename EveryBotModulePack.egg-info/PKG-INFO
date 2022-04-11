@@ -1,9 +1,13 @@
 Metadata-Version: 2.1
 Name: EveryBotModulePack
-Version: 0.1b2
-Summary: Module package for EveryBot
+Version: 0.1b3
+Summary: Pack for creating modules for EveryBot
+Home-page: UNKNOWN
+Author: mex312
+Author-email: mex3122020@gmail.com
 License: UNKNOWN
 Platform: UNKNOWN
+Requires: pyTelegramBotApi
 
 UNKNOWN
 
