@@ -13,10 +13,10 @@ class Core(Unit):
         self.bot.token = botToken
         self.name = "CORE"
 
-    def DeleteMessage(self, message: telebot.types.Message):
+    def delete_message(self, message: telebot.types.Message):
         self.bot.delete_message(message_id=message.id, chat_id=message.chat.id)
 
-    def AddModule(self, module: Unit):
+    def add_module(self, module: Unit):
         self.modulesList += [module]
 
 
@@ -25,7 +25,7 @@ class Module(Unit):
 
     def __init__(self, core: Core, name: str = "NAMELESS"):
         self.core = core
-        self.core.modulesList += [self]
+        self.core.add_module(self)
         self.name = name
 
     def help(self):

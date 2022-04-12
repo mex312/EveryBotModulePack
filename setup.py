@@ -2,8 +2,8 @@ from setuptools import setup
 
 setup(
     name='EveryBotModulePack',
-    version='0.1b3',
-    packages=['EveryBot'],
+    version='0.1b5',
+    packages=['every_bot'],
     url='',
     license='',
     author='mex312',

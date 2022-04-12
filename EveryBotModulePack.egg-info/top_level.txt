@@ -1,1 +1,1 @@
-EveryBot
+every_bot
