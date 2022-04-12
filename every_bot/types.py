@@ -30,3 +30,45 @@ class Module(Unit):
 
     def help(self):
         pass
+
+    def handle_poll(self, poll: telebot.types.Poll):
+        pass
+
+    def handle_inline(self, inline: telebot.types.InlineQuery):
+        pass
+
+    def handle_message(self, message: telebot.types.Message):
+        pass
+
+    def handle_channel_post(self, post: telebot.types.Message):
+        pass
+
+    def handle_callback_query(self, callback: telebot.types.CallbackQuery):
+        pass
+
+    def handle_chat_member(self, member: telebot.types.ChatMember):
+        pass
+
+    def handle_chosen_inline(self, inline: telebot.types.InlineQuery):
+        pass
+
+    def handle_edited_message(self, message: telebot.types.Message):
+        pass
+
+    def handle_poll_answer(self, poll: telebot.types.Poll):
+        pass
+
+    def handle_shipping_query(self, shipping: telebot.types.ShippingQuery):
+        pass
+
+    def handle_chat_join_request(self, request: telebot.types.ChatJoinRequest):
+        pass
+
+    def handle_edited_channel_post(self, post: telebot.types.Message):
+        pass
+
+    def handle_my_chat_member(self, member: telebot.types.ChatMember):
+        pass
+
+    def handle_pre_checkout_query(self, preCheckout: telebot.types.PreCheckoutQuery):
+        pass

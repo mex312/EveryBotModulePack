@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='EveryBotModulePack',
-    version='0.1b6',
+    version='0.1b7',
     packages=['every_bot'],
     url='',
     license='',

@@ -1,2 +1,3 @@
-/venv/
-/dist/
+/venv
+/dist
+/EveryBotModulePack.egg-info
