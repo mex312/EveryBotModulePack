@@ -1,1 +1,1 @@
-import types
+from every_bot.types import Module, Core
