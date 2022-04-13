@@ -16,13 +16,16 @@ class Core(Unit):
     def delete_message(self, message: telebot.types.Message):
         self.bot.delete_message(message_id=message.id, chat_id=message.chat.id)
 
+    def send_message(self, message: telebot.types.Message, text: str):
+        self.bot.send_message(chat_id=message.chat.id, text=text)
+
     def add_module(self, module: Unit):
         self.modulesList += [module]
 
 
 class Module(Unit):
     core: Core
-    name = "NAMELESS"
+    name: str = "NAMELESS"
 
     def __init__(self, core: Core):
         self.core = core
