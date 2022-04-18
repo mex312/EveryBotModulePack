@@ -93,6 +93,7 @@ class Module(Unit):
     def __init__(self, core: Core):
         self.core = core
         self.core.add_module(self)
+        self.commands = []
 
     def add_new_command(self, command: str, args: list[type], handler: type(lambda m, l: None), helpHandler: type(lambda m, h: None)):
         self.commands += [Command(self, command, args, handler, helpHandler)]
