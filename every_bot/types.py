@@ -84,7 +84,7 @@ class Command(Unit):
             self.helpHandler(message, self.docStr)
 
 
-class Module(Unit):
+class BotModule(Unit):
     core: Core
     name: str = "NAMELESS"
     helpStr: str = "IT IS MODULE"
@@ -93,7 +93,6 @@ class Module(Unit):
     def __init__(self, core: Core):
         self.core = core
         self.core.add_module(self)
-        self.commands = []
 
     def add_new_command(self, command: str, args: list[type], handler: type(lambda m, l: None), helpHandler: type(lambda m, h: None)):
         self.commands += [Command(self, command, args, handler, helpHandler)]
